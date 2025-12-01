@@ -225,29 +225,6 @@ header {
   right: 0px;
 }
 
-.polemicas{
-  width: 200px;
-  background-color: #00ff15;
-  padding: 5px;
-}
-
-.polemicas > img {
-  width: 100%;
-   bottom: -140px;
-  top: -55px;
-  right: -50px; 
-}
-
-.crono > img {
-  width: 420px;
-  top: -120px;
-  right: -100px;
-}
-
-main {
-  padding: 60px 100px;
-}
-
 
 
 
@@ -265,7 +242,7 @@ main {
   width: 270px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
+z
 .galeria div:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px #2be706;
@@ -494,8 +471,99 @@ footer p, footer li, footer h5 {
 .polemicas {
   background-color: #111;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 100px;
   width: 200px;          
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease;;
 }
+
+.lista-polemicas {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.item-polemica {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item-polemica:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #2be706;
+}
+
+.item-polemica img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.texto-polemica {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.texto-polemica h3 {
+  margin-bottom: 10px;
+  color: #2be706;
+}
+
+.texto-polemica p {
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #ccc;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .item-polemica {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item-polemica img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .texto-polemica {
+    align-items: center;
+  }
+}
+
+  #botao {
+    background: linear-gradient(45deg, #000000, #04860a);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  #botao:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  }
+
+  #mensagem {
+    font-size: 16px;
+    margin-top: 5px;
+    opacity: 0;
+    transition: 0.5s;
+  }

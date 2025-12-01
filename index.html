@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,7 @@
     <header>
       <div class="logo">NEYMAR</div>
       <nav class="navbar">
+</body>
         <ul class="nav-links">
           <li><a href="index.html" class="ativo">Início</a></li>
           <li><a href="produtos.html">Produtos</a></li>
@@ -30,23 +31,20 @@
     <!-- Texto da introdução -->
     <div class="intro_text">
       <h1>INTRODUÇÃO</h1>
-    <p>
-Este site tem como objetivo apresentar a trajetória de Neymar da Silva Santos Júnior, um dos maiores ídolos do futebol mundial. Aqui, você poderá conhecer sua origem, suas conquistas e momentos que marcaram sua carreira, tanto dentro quanto fora dos gramados.
-</p>
+      <body>
 
-<p>
-Desde criança, Neymar já demonstrava um talento especial com a bola nos pés. Com o passar dos anos, sua dedicação e amor pelo futebol o levaram a conquistar o mundo, jogando em grandes clubes e encantando milhões de fãs com sua habilidade, criatividade e alegria em campo.
-</p>
+  <button id="botao">mostrar</button>
+  <p id="mensagem" style="opacity: 0; transition: 0.5s;">Este site tem como objetivo apresentar a trajetória de Neymar da Silva Santos Júnior, um dos maiores ídolos do futebol mundial. Aqui, você poderá conhecer sua origem, suas conquistas e momentos que marcaram sua carreira, tanto dentro quanto fora dos gramados.Desde criança, Neymar já demonstrava um talento especial com a bola nos pés. Com o passar dos anos, sua dedicação e amor pelo futebol o levaram a conquistar o mundo, jogando em grandes clubes e encantando milhões de fãs com sua habilidade, criatividade e alegria em campo.Além de suas conquistas esportivas, o site também revela o lado humano de Neymar — sua relação com a família, suas inspirações e o impacto que ele tem fora dos gramados.Explore as páginas, conheça curiosidades, veja imagens marcantes e descubra fatos que fazem de Neymar Jr. um nome eterno na história do futebol. Este site é um tributo a um craque que inspira gerações com seu talento, sua determinação e sua alegria de jogar.</p>
 
-<p>
-Além de suas conquistas esportivas, o site também revela o lado humano de Neymar — sua relação com a família, suas inspirações e o impacto que ele tem fora dos gramados.
-</p>
+  <script>
+    const botao = document.getElementById("botao");
+    const mensagem = document.getElementById("mensagem");
 
-<p>
-Explore as páginas, conheça curiosidades, veja imagens marcantes e descubra fatos que fazem de Neymar Jr. um nome eterno na história do futebol. Este site é um tributo a um craque que inspira gerações com seu talento, sua determinação e sua alegria de jogar.
-</p>
-
-
+    botao.addEventListener("click", () => {
+      mensagem.style.opacity = 1;
+    });
+  </script>
+</body>
     </div>
 
     <!-- Vídeo -->
@@ -70,18 +68,6 @@ Explore as páginas, conheça curiosidades, veja imagens marcantes e descubra fa
   Desde jovem, encantou os torcedores com seu estilo habilidoso, dribles rápidos e carisma dentro e fora de campo. 
   Este site foi criado para mostrar toda a trajetória do jogador, suas conquistas e momentos marcantes que o tornaram um ídolo global.
 </p>
-
-      </div>
-      <div class="img_sobre">
-        <img src="./img/img2/image.png" alt="" id="img2">
-        <img src="./img/img3/image.png" alt="" id="img3">
-        <img src="./img/img4/image.png" alt="" id="img4">
-        <img src="./img/img5/image.png" alt="" id="img5">
-      </div>
-    </section>
-
-
-
     <section id="services">
       <h1>Serviços</h1>
       <div class="services">
