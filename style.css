@@ -102,6 +102,16 @@ header {
   justify-content: center;
 }
 
+.contatos a {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  color: white;
+}
+.direitos {
+  color: white;
+  background-color: black;
+}
 /* Serviços / Produtos */
 #services {
   display: flex;
